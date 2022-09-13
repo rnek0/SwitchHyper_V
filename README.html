@@ -1,0 +1,18 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"></head><body> 
+ <h1>SwitchHyper_V</h1>
+<p>Application that helps to switch on/off Hyper-V.</p>
+<p><a href="https://docs.microsoft.com/fr-fr/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v">Doc Hyper-V</a></p>
+<hr />
+<p>Another way(no need to make an application in C # except for fun) :</p>
+<p>To <strong>disable Hyper-V</strong> to use VirtualBox, open a command prompt as an administrator and run the following command:</p>
+<pre><code class="language-cmd">bcdedit /set hypervisorlaunchtype off
+</code></pre>
+<p>You will need to reboot, but then you will be ready to run VirtualBox.</p>
+<p>To <strong>reactivate Hyper-V</strong>, run:</p>
+<pre><code class="language-cmd">bcdedit /set hypervisorlaunchtype auto
+</code></pre>
+<p>and reboot.</p>
+<hr />
+<p>Do not forget to stop the boot of Docker Desktop when booting the pc, otherwise it will alert you to the absence of Hyper-V.</p>
+<p>After reactivating Hyper-v you will be able to reuse Docker Desktop.</p>
+ </body><html>

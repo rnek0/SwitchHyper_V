@@ -1,0 +1,4 @@
+# Up to github
+
+
+git remote set-url origin git@github.com:rnek0/Hyper_V.git
